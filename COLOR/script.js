@@ -6,6 +6,8 @@ function onClick(){
    else {
     button.style.backgroundColor='red';
    }
+  
+  
 }
 
 
