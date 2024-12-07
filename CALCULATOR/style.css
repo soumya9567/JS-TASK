@@ -1,21 +1,25 @@
-.container{
-    width: 400px;
+.calculator{
+    width: 350px;
     height: 600px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: rgb(22, 22, 21);
+    background-color: black;
     margin: auto;
 }
 
-#input{
+#display{
 
 
-    width: 350px;
+    width: 300px;
     height: 60px;
     position: relative;
     top: 30px;
     margin-left: 20px;
     font-size: xx-large;
+    color: white;
+    background-color: black;
+    text-align: right;
+    /* border: none; */
     /* left: 250px; */
 }
 
@@ -35,6 +39,7 @@
     background-color: rgb(161, 158, 158);
     font-size: x-large;
     border: none;
+    cursor: pointer;
 
 }
 
@@ -47,8 +52,22 @@
     color: white;
     font-size: x-large;
     border: none;
+    cursor: pointer;
 }
 
+.ac1-btn:active{
+    background-color: rgb(206, 201, 201);
+}
 
+.ac-btn:active{
+    background-color: rgb(79, 78, 78);
+}
+ 
 
-
+button{
+    cursor: pointer;
+    pointer-events: auto;
+}
+.ac-btn, .ac1-btn {
+    z-index: 10;  /* Ensure buttons are above other elements */
+}

@@ -3,9 +3,12 @@ function onClick(){
    if(button.style.backgroundColor==='red'){
     button.style.backgroundColor ='green';
    }
-   else {
-    button.style.backgroundColor='red';
-   }
+   else if(button.style.backgroundColor==='green'){
+    button.style.backgroundColor='blue';
+   } 
+   else{
+    button.style.backgroundColor = 'red';
+}
   
   
 }
